@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Red Hat Display';
+  min-height: 100vh;
+  position: relative;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 45rem;
+   background: white;
+   border-radius: 11px;
+   overflow: hidden;
+}
+
+.text {
+  padding: 7%;
+  text-align: center;
+}
+
+.text1 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.header {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.text2 {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  border-radius: 11px;
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.text2-left {
+  display: flex;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color:hsl(223, 47%, 23%)
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.change {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.proceed-btn {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1.4rem;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: hsl(224, 23%, 55%);
+}
+
+@media only screen and (max-width:425px){
+  .container{
+    max-width: 87%;
+  }
+  .header {
+    font-size: 2rem;
+  }
+}
